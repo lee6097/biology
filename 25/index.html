@@ -2,143 +2,102 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>제25장 체온조절과 수분평형 요약</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25장 - 체온조절과 수분평형</title>
     <style>
         body {
-            font-family: 'Malgun Gothic', 'Apple Gothic', sans-serif;
-            line-height: 1.6;
+            margin: 0;
+            font-family: "Pretendard", "Noto Sans KR", sans-serif;
+            background: #f5f7fa;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
         }
-        h1 {
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 0;
             text-align: center;
-            color: #1e88e5;
-            border-bottom: 2px solid #1e88e5;
-            padding-bottom: 10px;
+            font-size: 28px;
+            font-weight: 700;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            color: #43a047;
-            margin-top: 30px;
-            border-left: 5px solid #43a047;
-            padding-left: 10px;
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
         }
-        h3 {
-            color: #fb8c00;
+
+        .menu-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
             margin-top: 20px;
         }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
+
+        .menu-item {
+            background: white;
+            padding: 15px 0;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 500;
+            transition: 0.25s;
+            border: 1px solid #e0e0e0;
         }
-        li {
-            margin-bottom: 8px;
+
+        .menu-item:hover {
+            background: #4CAF50;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1);
         }
-        strong {
-            color: #0d47a1;
-        }
-        .intro {
-            background-color: #f1f8e9;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
         }
     </style>
 </head>
+
 <body>
 
-    <h1>제25장 체온조절과 수분평형</h1>
+<header>
+    25장 체온조절 & 수분평형
+</header>
 
-    <div class="intro">
-        <h3>장의 개요</h3>
-        <p>이 장에서는 동물이 외부 환경 변화에도 불구하고 생존하기 위해 사용하는 두 가지 중요한 항상성 기작을 다룹니다.</p>
-        <ul>
-            <li><strong>체온조절 (25.1~25.3):</strong> 적정 체온 유지</li>
-            <li><strong>삼투조절과 배설 (25.4~25.9):</strong> 체액의 수분 및 용질 균형 유지</li>
-        </ul>
+<div class="container">
+    <div class="menu-title">세부 단원 이동</div>
+
+    <div class="menu-grid">
+        <a class="menu-item" href="https://lee6097.github.io/biology/25/0">25.0</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/25/1">25.1</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/25/2">25.2</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/25/3">25.3</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/25/4">25.4</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/25/5">25.5</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/25/6">25.6</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/25/7">25.7</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/25/8">25.8</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/25/9">25.9</a>
     </div>
+</div>
 
-    <h2>25.1 동물의 체온조절은 항상성 유지에 도움이 된다</h2>
-    <p>외부 온도가 변해도 내부 체온을 일정하게 유지하는 것은 효소 반응 등 생명 현상에 필수적입니다.</p>
-    <ul>
-        <li><strong>내온동물 (Endotherm):</strong> 대사열로 체온을 조절 (예: 포유류, 조류)</li>
-        <li><strong>외온동물 (Ectotherm):</strong> 외부 환경에서 열을 얻음 (예: 파충류, 어류, 무척추동물)</li>
-    </ul>
-    <h3>열 교환의 4가지 방식</h3>
-    <ul>
-        <li><strong>전도 (Conduction):</strong> 직접 접촉한 물체 간의 열 이동</li>
-        <li><strong>복사 (Radiation):</strong> 전자기파 방출에 의한 열 이동 (예: 태양열)</li>
-        <li><strong>대류 (Convection):</strong> 공기나 액체의 흐름에 의한 열 이동</li>
-        <li><strong>증발 (Evaporation):</strong> 액체가 기화되며 표면의 열을 뺏어가는 현상</li>
-    </ul>
-
-    <h2>25.2 체온조절 적응 방법</h2>
-    <p>동물은 열의 획득과 손실의 균형을 맞추기 위해 5가지 방식으로 적응했습니다.</p>
-    <ul>
-        <li><strong>대사열 생성:</strong> 세포호흡이나 근육 활동(떨림)을 통해 열을 생성합니다.</li>
-        <li><strong>단열 (Insulation):</strong> 털, 깃털, 지방층으로 열 방출을 차단합니다 (예: 펭귄의 지방층).</li>
-        <li><strong>순환계의 적응:</strong> 혈관 수축/이완으로 열 손실을 조절하며, <strong>역류열교환</strong>(따뜻한 동맥혈과 찬 정맥혈의 열 교환)으로 중심 체온을 보존합니다.</li>
-        <li><strong>증발 냉각:</strong> 땀을 흘리거나 헐떡임을 통해 체온을 낮춥니다.</li>
-        <li><strong>행동적 반응:</strong> 그늘을 찾거나, 물을 뿌리거나, 계절에 따라 이동하는 등의 행동을 합니다.</li>
-    </ul>
-
-    <h2>25.3 모기의 체온조절 (물방울 보유)</h2>
-    <ul>
-        <li>모기는 따뜻한 피를 빨 때 체온이 과열될 위험이 있습니다.</li>
-        <li>이를 막기 위해 배 끝에 액체 방울을 매달아 <strong>증발</strong>시킴으로써 체온을 낮추는 '물방울 보유(drop-keeping)' 행동을 합니다.</li>
-        <li>이 행동은 모기 체내의 말라리아 원충을 보호하는 역할도 합니다.</li>
-    </ul>
-
-    <h2>25.4 삼투조절과 수분 평형</h2>
-    <p>동물은 체액의 용질 농도(삼투압)를 조절해야 합니다.</p>
-    <ul>
-        <li><strong>삼투순응자:</strong> 체액 농도를 환경(바닷물)과 같게 유지 (예: 해양 무척추동물).</li>
-        <li><strong>삼투조절자:</strong> 환경과 독립적으로 체액 농도를 조절 (예: 담수어, 해양어류, 육상동물).</li>
-    </ul>
-    <h3>환경별 조절 전략</h3>
-    <ul>
-        <li><strong>담수어류:</strong> 물이 들어오므로 묽은 소변 배설, 아가미로 염분 흡수.</li>
-        <li><strong>해양어류:</strong> 물을 잃으므로 바닷물을 마시고, 아가미로 염분 배출.</li>
-        <li><strong>육상동물:</strong> 방수성 피부, 행동 조절, 신장을 통해 수분 손실을 막음.</li>
-    </ul>
-
-    <h2>25.5 질소 노폐물의 배설</h2>
-    <p>단백질과 핵산 분해 시 발생하는 독성 질소 노폐물은 서식지에 따라 다른 형태로 배설됩니다.</p>
-    <ul>
-        <li><strong>암모니아 (Ammonia):</strong> 독성이 강하고 물에 잘 녹음. 수중 동물(어류 등)이 물로 바로 배출.</li>
-        <li><strong>요소 (Urea):</strong> 독성이 낮음. 간에서 생성. 포유류, 양서류 등이 배설하며 물 손실을 줄임.</li>
-        <li><strong>요산 (Uric acid):</strong> 독성이 거의 없는 반고체 상태. 물을 거의 쓰지 않음. 조류, 곤충, 파충류가 배설 (알 껍질 속 배아에게 안전).</li>
-    </ul>
-
-    <h2>25.6 배설계의 구조 (콩팥)</h2>
-    <ul>
-        <li><strong>콩팥(신장):</strong> 혈액을 여과하여 노폐물을 제거하고 수분을 조절하는 핵심 기관.</li>
-        <li><strong>네프론 (Nephron):</strong> 콩팥의 기능적 단위로, 사구체, 보먼주머니, 세뇨관으로 구성.</li>
-        <li>매일 약 180L의 혈액을 여과하지만, 99%는 재흡수되고 약 1.5L만 소변으로 배출됩니다.</li>
-    </ul>
-
-    <h2>25.7 네프론의 기능 (여과, 재흡수, 분비)</h2>
-    <p>소변 생성은 세 가지 과정을 거칩니다.</p>
-    <ol>
-        <li><strong>여과 (Filtration):</strong> 혈압에 의해 물과 작은 용질이 혈액에서 보먼주머니로 이동 (여과액 생성).</li>
-        <li><strong>재흡수 (Reabsorption):</strong> 물, 포도당, 아미노산 등 필요한 물질을 세뇨관에서 혈액으로 다시 회수.</li>
-        <li><strong>분비 (Secretion):</strong> 혈액 내의 과도한 이온(H+)이나 약물 등을 세뇨관으로 능동적으로 내보냄.</li>
-    </ol>
-    <p><strong>소변 농축:</strong> 헨레고리를 지나며 물이 재흡수되어 소변이 농축됩니다.</p>
-
-    <h2>25.8 호르몬에 의한 조절 (ADH)</h2>
-    <ul>
-        <li><strong>항이뇨호르몬 (ADH):</strong> 탈수 시 뇌하수체에서 분비되어 콩팥의 수분 재흡수를 촉진(소변량 감소, 농도 증가).</li>
-        <li>수분을 과다 섭취하면 ADH 분비가 줄어 묽은 소변을 봅니다.</li>
-        <li>알코올이나 카페인은 ADH를 억제하는 <strong>이뇨제</strong> 역할을 하여 탈수를 유발할 수 있습니다.</li>
-    </ul>
-
-    <h2>25.9 콩팥 투석</h2>
-    <ul>
-        <li>콩팥 기능 상실 시 <strong>투석(Dialysis)</strong> 기계를 이용해 혈액 속 노폐물을 인공적으로 걸러냅니다.</li>
-        <li>확산 원리를 이용해 선택적 투과막을 통해 혈액의 노폐물은 빼내고 필요한 물질은 남깁니다.</li>
-    </ul>
+<footer>
+    © 2025 기초약학생물2 자료 페이지
+</footer>
 
 </body>
 </html>
