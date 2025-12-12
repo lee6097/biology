@@ -1,137 +1,99 @@
-<div style="font-family: 'Malgun Gothic', 'Apple Gothic', sans-serif; line-height: 1.6; padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px;">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>즐거운 기초약학생물2</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Pretendard", "Noto Sans KR", sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
 
-    <h1 style="text-align: center; color: #1e88e5; border-bottom: 2px solid #1e88e5; padding-bottom: 10px;">
-        제25장 체온조절과 수분평형 요약
-    </h1>
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
 
-    <h2 style="color: #43a047; margin-top: 25px;">장의 개요</h2>
-    <p>이 장은 크게 두 가지 항상성 조절 기작을 다룹니다.</p>
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
 
-    <ul>
-        <li>
-            <span class="cite_start"><strong>체온조절 (25.1~25.3):</strong> 동물의 체온조절은 항상성 유지에 매우 중요합니다[cite: 1949, 1951].</span>
-        </li>
-        <li>
-            <span class="cite_start"><strong>삼투조절과 배설 (25.4~25.9):</strong> 동물은 체액의 수분, 용질, 노폐물의 양을 적정 범위로 조절합니다[cite: 1952, 1954].</span>
-        </li>
-    </ul>
+        .menu-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #444;
+        }
 
-    <h2 style="color: #43a047; margin-top: 25px;">25.0 먹이활동 중 체온 과열을 방지하는 모기의 행동</h2>
-    <p>
-        <span class="cite_start">얼룩날개모기(Anopheles) 암컷은 말라리아를 유발하는 기생원충을 옮깁니다[cite: 1959].</span>
-        <span class="cite_start">모기는 따뜻한 피를 빨아들일 때 과열 위험이 있으며, 몸의 과열을 막고 치명적인 기생충의 생존성을 높이는 행동을 합니다[cite: 1960, 1961].</span>
-        이는 체온조절의 중요성을 보여주는 예시입니다.
-    </p>
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
 
-    <h2 style="color: #43a047; margin-top: 25px;">체온조절</h2>
+        .menu-item {
+            background: white;
+            padding: 15px 0;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 500;
+            transition: 0.25s;
+            border: 1px solid #e0e0e0;
+        }
 
-    <h3 style="color: #66bb6a;">25.1 동물의 체온조절은 항상성 유지에 도움이 된다</h3>
-    <ul>
-        <li>
-            <span class="cite_start"><strong>체온조절(Thermoregulation):</strong>
-            외부 온도가 변해도 적정 범위의 내부 체온을 유지하는 항상성 기작으로, 정상적인 효소 반응에 필수적입니다[cite: 1992, 1993].</span>
-        </li>
-        <li>
-            <span class="cite_start"><strong>내온동물(Endothermic):</strong>
-            대사 작용으로 생성되는 열로 체온 조절 (사람, 포유류, 조류)[cite: 1994].</span>
-        </li>
-        <li>
-            <span class="cite_start"><strong>외온동물(Ectothermic):</strong>
-            외부 환경으로부터 열을 공급받아 체온 조절 (대부분의 파충류, 어류, 무척추동물)[cite: 1995].</span>
-        </li>
+        .menu-item:hover {
+            background: #4CAF50;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1);
+        }
 
-        <li>
-            <span class="cite_start"><strong>열 교환 4가지 방법:</strong>
-            열은 높은 온도에서 낮은 온도로 흐르며, 다음 네 가지 방법으로 교환됩니다[cite: 1997, 1998, 2000, 2002, 2008].</span>
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
 
-            <ul style="list-style-type: circle;">
-                <li><span class="cite_start"><strong>전도 (Conduction):</strong> 접촉하고 있는 물체 사이에 열 이동[cite: 1998].</span></li>
-                <li><span class="cite_start"><strong>복사 (Radiation):</strong> 전자기파 방출로 비접촉 물체 간 열 이동[cite: 2000, 2001].</span></li>
-                <li><span class="cite_start"><strong>대류 (Convection):</strong> 기체나 액체 이동에 의한 열 이동[cite: 2002].</span></li>
-                <li><span class="cite_start"><strong>증발 (Evaporation):</strong> 액체의 기화로 표면 온도가 감소[cite: 2008, 2009].</span></li>
-            </ul>
-        </li>
-    </ul>
+<body>
 
-    <h3 style="color: #66bb6a;">25.2 체온조절은 열의 획득과 손실 사이에 균형을 유지하도록 적응되어 왔다</h3>
-    <p>동물의 체온조절 적응 방법은 다섯 가지로 구분됩니다.</p>
+<header>
+    즐거운 기초약학생물2
+</header>
 
-    <ul>
-        <li>
-            <strong>대사에 의한 열 생성:</strong>
-            <span class="cite_start">동면 포유류는 미토콘드리아에서 열생성과 ATP 합성의 짝풀림으로 대사열 증가[cite: 2013, 2014, 2015, 2016].</span>
-        </li>
+<div class="container">
+    <div class="menu-title">단원 이동</div>
 
-        <li>
-            <strong>단열 (Insulation):</strong>
-            <span class="cite_start">털, 깃털, 지방이 체열 방출을 차단합니다[cite: 2018, 2019, 2021].</span>
-        </li>
+    <div class="menu-grid">
+        <a class="menu-item" href="https://lee6097.github.io/biology/25">25장</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/26">26장</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/27">27장</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/28">28장</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/29">29장</a>
+        <a class="menu-item" href="https://lee6097.github.io/biology/30">30장</a>
+    </div>
+</div>
 
-        <li>
-            <strong>순환계의 적응:</strong>
-            <ul style="list-style-type: circle;">
-                <li><span class="cite_start">혈관 수축 → 열 손실 감소[cite: 2039].</span></li>
-                <li><span class="cite_start">혈관 확장 → 열 손실 증가[cite: 2039].</span></li>
-                <li><span class="cite_start"><strong>역류열교환:</strong> 동맥·정맥 간 반대 흐름으로 열을 보존[cite: 2041, 2053].</span></li>
-            </ul>
-        </li>
+<footer>
+    © 2025 기초약학생물2 자료 페이지
+</footer>
 
-        <li>
-            <span class="cite_start"><strong>증발에 의한 열 방출:</strong> 땀, 헐떡임 등[cite: 2056, 2057].</span>
-        </li>
-
-        <li>
-            <span class="cite_start"><strong>행동적 반응:</strong> 햇볕 쬐기, 굴 이동, 물 뿌리기, 귀 펄럭임 등[cite: 2058, 2059, 2060, 2061, 2062].</span>
-        </li>
-    </ul>
-
-    <h3 style="color: #66bb6a;">25.3 물방울 보유가 모기의 체온조절을 돕는다</h3>
-    <ul>
-        <li><span class="cite_start">암컷 모기의 ‘물방울 보유’ 행동은 증발로 복부 온도를 약 2℃ 낮춤[cite: 2047, 2049].</span></li>
-        <li><span class="cite_start">이는 말라리아 원충을 사멸 온도에서 보호하여 전파 가능성을 유지함[cite: 2050].</span></li>
-    </ul>
-
-    <h2 style="color: 43a047; margin-top: 25px;">삼투조절과 배설</h2>
-
-    <h3 style="color: #66bb6a;">25.4 동물은 삼투조절로 수분과 용질량의 균형을 유지한다</h3>
-    <p>동물은 삼투 농도 조절을 위해 두 가지 전략을 사용합니다.</p>
-
-    <ul>
-        <li><span class="cite_start"><strong>삼투순응자:</strong> 외부 환경과 동일한 용질 농도 유지[cite: 2081].</span></li>
-        <li><span class="cite_start"><strong>삼투조절자:</strong> 체내 용질 농도 일정 유지[cite: 2083].</span></li>
-    </ul>
-
-    <p><strong>수중 삼투조절:</strong></p>
-    <ul>
-        <li>
-            <strong>담수어류:</strong>
-            <span class="cite_start">물 지속 획득 → 희석된 소변 배설[cite: 2112, 2126, 2101].</span>
-        </li>
-        <li>
-            <strong>해양어류:</strong>
-            <span class="cite_start">수분 손실 → 농축된 소변 배설[cite: 2114, 2104, 2110].</span>
-        </li>
-    </ul>
-
-    <p><strong>육상 삼투조절:</strong></p>
-    <ul>
-        <li><span class="cite_start">방수 표면, 음식물로 수분 획득[cite: 2116, 2120, 2125].</span></li>
-        <li><span class="cite_start">배설로 수분 손실 조절[cite: 2122].</span></li>
-    </ul>
-
-    <h3 style="color: #66bb6a;">25.5 동물은 다양한 방법으로 질소 노폐물 처리방법을 진화시켜 왔다</h3>
-    <p><span class="cite_start">단백질·핵산 분해로 질소 노폐물 생성 → 서식지에 맞게 배설 형태 진화[cite: 2134, 2135].</span></p>
-
-    <ul>
-        <li>
-            <strong>암모니아:</strong>
-            <ul style="list-style-type: circle;">
-                <li><span class="cite_start">대부분의 수중동물 배설[cite: 2143].</span></li>
-                <li><span class="cite_start">독성 강함 → 저장 불가, 물에 희석해 배출[cite: 2144, 2147].</span></li>
-            </ul>
-        </li>
-
-        <li>
-            <strong>요소 (Urea):</strong>
-            <ul style="list-style-type: circle;">
-                <li><span class="cite_start">포유류·양서류·상어 배설[cite: 2151].</span></li>
+</body>
+</html>
